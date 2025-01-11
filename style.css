@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  min-width: 400px;
+  max-height: 525px;
+  border-radius: 10px;
+  background: linear-gradient(
+    151.53deg,
+    rgba(255, 255, 255, 0.4) 6.01%,
+    rgba(255, 255, 255, 0.1) 92.61%
+  );
+  position: absolute;
+}
+
+.circle {
+  border-radius: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.circle-1 {
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(
+    69.62% 69.62% at 50% 50%,
+    #ea8bfa 0%,
+    #7526f5 100%
+  );
+  top: -45px;
+  left: -58px;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    63.62% 63.62% at 50% 50%,
+    #ff00c7 0%,
+    #bd95ff 0.01%,
+    #a661ff 32.29%,
+    #6100ff 98.59%
+  );
+  right: -310px;
+  top: -180px;
+}
+
+.circle-3 {
+  width: 210px;
+  height: 210px;
+  background: radial-gradient(
+    67.47% 67.47% at 50% 50%,
+    #fed0ff 0%,
+    #7f00ff 100%
+  );
+  left: -160px;
+  bottom: 20px;
+}
+
+.card-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.js-img {
+  width: 100%;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.tag-and-heart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text h3 {
+    margin-top: 12px;
+}
+
+.card-text p {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.ratings img {
+    margin-top: 20px;
+    vertical-align: bottom;
+}
+
+.ratings span {
+    font-size: 12px;
+}
+
+.rating-number {
+    color: rgba(241, 198, 68, 1);
+    margin-inline: 2px;
+}
+
+.btn-img {
+    /* margin-bottom: 25px; */
+    padding-block: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
+  .card-container {
+    overflow: hidden;
+    min-width: 350px;
+    max-height: 500px;
+  }
+  main {
+    padding: 20px;
+  }
+}
